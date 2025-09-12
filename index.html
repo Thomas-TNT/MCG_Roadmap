@@ -235,16 +235,16 @@
             z-index: 2;
         }
 
-        /* Timeline badge colors */
-        .timeline__year:nth-child(1) .timeline__badge,
-        .timeline__year:nth-child(2) .timeline__badge { background: var(--primary-blue); }
+        /* Timeline badge colors - grouped by year */
+        .timeline__year:nth-child(1) .timeline__badge { background: var(--primary-blue); } /* Q4 2025 */
+        .timeline__year:nth-child(2) .timeline__badge,
         .timeline__year:nth-child(3) .timeline__badge,
-        .timeline__year:nth-child(4) .timeline__badge { background: var(--danger-red); }
-        .timeline__year:nth-child(5) .timeline__badge,
-        .timeline__year:nth-child(6) .timeline__badge { background: var(--warning-orange); }
+        .timeline__year:nth-child(4) .timeline__badge,
+        .timeline__year:nth-child(5) .timeline__badge { background: var(--danger-red); } /* Q1-Q4 2026 */
+        .timeline__year:nth-child(6) .timeline__badge,
         .timeline__year:nth-child(7) .timeline__badge,
         .timeline__year:nth-child(8) .timeline__badge,
-        .timeline__year:nth-child(9) .timeline__badge { background: var(--success-green); }
+        .timeline__year:nth-child(9) .timeline__badge { background: var(--warning-orange); } /* Q1-Q4 2027 */
 
         .timeline__content {
             display: flex;
@@ -276,16 +276,16 @@
             box-shadow: var(--box-shadow-hover);
         }
 
-        /* Timeline card border colors */
-        .timeline__column:nth-child(1) .timeline__card,
-        .timeline__column:nth-child(2) .timeline__card { border-left-color: var(--primary-blue); }
+        /* Timeline card border colors - grouped by year */
+        .timeline__column:nth-child(1) .timeline__card { border-left-color: var(--primary-blue); } /* Q4 2025 */
+        .timeline__column:nth-child(2) .timeline__card,
         .timeline__column:nth-child(3) .timeline__card,
-        .timeline__column:nth-child(4) .timeline__card { border-left-color: var(--danger-red); }
-        .timeline__column:nth-child(5) .timeline__card,
-        .timeline__column:nth-child(6) .timeline__card { border-left-color: var(--warning-orange); }
+        .timeline__column:nth-child(4) .timeline__card,
+        .timeline__column:nth-child(5) .timeline__card { border-left-color: var(--danger-red); } /* Q1-Q4 2026 */
+        .timeline__column:nth-child(6) .timeline__card,
         .timeline__column:nth-child(7) .timeline__card,
         .timeline__column:nth-child(8) .timeline__card,
-        .timeline__column:nth-child(9) .timeline__card { border-left-color: var(--success-green); }
+        .timeline__column:nth-child(9) .timeline__card { border-left-color: var(--warning-orange); } /* Q1-Q4 2027 */
 
         .timeline__card h3 {
             color: var(--dark-blue);
@@ -784,10 +784,6 @@
                                         <li class="list__item">MV30-1256: Fix D&S critical bugs (duplicates, save errors)</li>
                                         <li class="list__item">MV30-2079: Resolve EOP sticky bug (Ready for Production)</li>
                                         <li class="list__item">MV30-2041: Deploy Treatment Plan templates</li>
-                                        <li class="list__item">MV30-2201: Enhanced user tracing & analytics</li>
-                                        <li class="list__item">MV30-0000: OAuth setup</li>
-                                        <li class="list__item">MV30-0000: Sock 2 Type 2</li>
-                                        <li class="list__item">MV30-0000: Content Modules</li>
                                     </ul>
                                     <div class="grid grid--metrics">
                                         <div class="card card--metric">
@@ -813,7 +809,6 @@
                                         <li class="list__item">MV30-2043: Finish Next Steps redesign (19 modules)</li>
                                         <li class="list__item">MV30-2045: Standardize Notes with PHI compliance</li>
                                         <li class="list__item">MV30-2222: Launch 3D Liver Model (Voka integration)</li>
-                                        <li class="list__item">MV30-0000: Content Modules</li>
                                     </ul>
                                     <div class="grid grid--metrics">
                                         <div class="card card--metric">
@@ -837,8 +832,7 @@
                                     <ul class="list">
                                         <li class="list__item">MV30-2047: Epic EHR Phase 1 (FHIR R4, OAuth 2.0)</li>
                                         <li class="list__item">MV30-2174: Implement E2E regression testing</li>
-                                        <li class="list__item">MV30-0000: Content Modules</li>
-                                        
+                                        <li class="list__item">MV30-2201: Enhanced user tracing & analytics</li>
                                     </ul>
                                     <div class="grid grid--metrics">
                                         <div class="card card--metric">
@@ -863,7 +857,6 @@
                                         <li class="list__item">MV30-2042: Complete Resources library normalization</li>
                                         <li class="list__item">MV30-1883: Deploy comprehensive help system</li>
                                         <li class="list__item">MV30-2222: Expand 3D models (Lung, Brain)</li>
-                                        <li class="list__item">MV30-0000: Content Modules</li>
                                     </ul>
                                     <div class="grid grid--metrics">
                                         <div class="card card--metric">
@@ -889,7 +882,6 @@
                                         <li class="list__item">MV30-2056: Complete ADA compliance (D&S module)</li>
                                         <li class="list__item">MV30-1696: Full ADA compliance (Resources)</li>
                                         <li class="list__item">MV30-2214: Mobile app beta testing</li>
-                                        <li class="list__item">MV30-0000: Content Modules</li>
                                     </ul>
                                     <div class="grid grid--metrics">
                                         <div class="card card--metric">
@@ -1254,4 +1246,3 @@
     </script>
 </body>
 </html>
-
